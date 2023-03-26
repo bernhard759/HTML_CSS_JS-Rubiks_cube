@@ -8,4 +8,4 @@ The cube looks like this:
 
 ![rubiks cube](cube_screenshot.png "Rubiks cube")
 
-You can play with the cube and try to solve it with the deployed version of this repository code on gh pages.
+You can play with the cube and try to solve it with the deployed version of this repository code on gh pages [here](https://bernhard759.github.io/HTML_CSS_JS-Rubiks_cube/).
