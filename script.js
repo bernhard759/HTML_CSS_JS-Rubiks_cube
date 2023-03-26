@@ -851,12 +851,10 @@ function moveLeft(c, solve = true) {
 // Check cube solve
 function checkSolve() {
   let solved = new Array(6, false);
-  console.log(solved);
   document.querySelectorAll(".minicube").forEach((minicube, index) => {
     let color = getComputedStyle(minicube.firstElementChild).getPropertyValue(
       "background-color"
     );
-    console.log(color);
     let sideSolved = [
       ...minicube.querySelectorAll(".minicube__side.front"),
     ].every(
@@ -868,5 +866,4 @@ function checkSolve() {
   if (solved.every((item) => item == true)) {
     window.alert("Cube solved");
   }
-  console.log("solved", solved);
 }
