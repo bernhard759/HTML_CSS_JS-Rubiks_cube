@@ -141,10 +141,16 @@ function handleTouchMove(e) {
 
 //----------------------------------------------------------------
 
+// Custom timeout using promise
+function timeout(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 // Do some start stuff here
 window.addEventListener("load", async () => {
   // Disable pointer events
   document.body.style.pointerEvents = "none";
+  await timeout(500); // short timeout
   // Async calls to the move functions
   await moveLeftUp();
   await moveTopLeft();
